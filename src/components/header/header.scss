@@ -1,0 +1,96 @@
+@use '../../_variables.sass';
+*{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-info {
+        width: 1280px;
+        display: flex;
+        justify-content: center;
+        gap: 120px;
+        padding: 5px;
+        border-bottom: 1px solid #F0F0F0;
+        &-content {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            p{
+                font-size: 12px;
+                font-weight: 500;
+            }
+            span {
+                font-size: 12px;
+                font-weight: 600;
+                color: variables.$text-color;
+            }
+        }
+        
+    }
+    &-nav {
+        width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        align-items: center;
+        border-bottom: 1px solid #F0F0F0;
+        
+        &-search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F6F5F2;
+            width: 600px;
+            border-radius: 10px;
+            padding: 10px;
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                color: #9F9F9F;
+            }
+        }
+        &-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+    &-content {
+        width: 1280px;
+        box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.2), 5px 0 5px -5px rgba(0, 0, 0, 0.2);
+        ul {
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #9F9F9F;
+                    transition: 0.4s;
+                }
+                a:hover {
+                    color: #F71963;
+                }
+                img {
+                    margin-right: 5px;
+                }
+                &.active a{
+                    color: #F71963;
+                }
+            }
+        }
+    }
+}
