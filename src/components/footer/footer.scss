@@ -1,0 +1,147 @@
+@use '../../_variables.sass';
+
+h1 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer {
+    background-color: #2A2A2A;
+    width: 100%;
+    &-container {
+        width: 1280px;
+        height: 325px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-content {
+            display: flex;
+            width: 50%;
+            justify-content: space-between; //observar
+            &-sobre {
+                width: 150px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+            &-info {
+                width: 150px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            &-pag {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 200px;
+                &-icones {
+                    display: flex;
+                    flex-wrap: wrap;
+                    img {
+                        padding-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            ul {
+                margin-top: 10px;
+                li {
+                    padding: 10px 0px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: #fff;
+                    opacity: 0.7;
+                }
+            }
+
+        }
+        &-register {
+            width: 380px;
+            padding: 40px 30px;
+            height: 270px;
+            background-color: #fff;
+            margin-top: 30px;
+            border-radius: 10px;
+            h2 {
+                color: rgba(63, 63, 64, 1);
+                font-weight: 300;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 21px;
+                font-weight: 700;
+                color: rgba(63, 63, 64, 1);
+            }
+            p{
+                max-width: 310px;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 300;
+                font-size: 12px;
+                color: rgb(63, 63, 64);
+                margin-top: 12px;
+            }
+            form {
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                margin-top: 20px;
+                
+                input {
+                    width: 230px;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    outline: none;
+                }
+                button {
+                    width: 60px;
+                    height: 45px;
+                    color: white;
+                    background: #F71963;
+                    border-radius: 3px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &-border {
+        border: 1px solid #fff;
+        margin: 15px 0px;
+    }
+    &-copy {
+        width: 1280px;
+        margin: 0 auto;
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            p {
+                text-transform: uppercase;
+                width: 695px;
+                font-size: 10px;
+                font-weight: 400;
+                color:  rgba(255, 255, 255, 1) ;
+            }
+            &-logo {
+                img {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
