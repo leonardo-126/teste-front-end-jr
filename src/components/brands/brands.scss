@@ -1,0 +1,41 @@
+@use '../../_variables.sass';
+
+.brands {
+    width: 100%;
+    margin-top: 60px;
+    &-content {
+        width: 1280px;
+        margin: 0 auto;
+        &-title {
+            text-align: center;
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                color: variables.$text-color;
+            }
+        }
+        &-box {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .box {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden; //mantem dentro da borda
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 7px 20px 0px #00000021;
+    
+    
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

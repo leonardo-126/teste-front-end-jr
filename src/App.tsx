@@ -1,17 +1,17 @@
 import { Header } from "./components/header/header"
 import './App.scss'
-import { Banner } from "./components/baner/banner"
 import { Departamento } from "./components/departamento/departamento"
-import { Category } from "./components/categorias/categoria"
+import { Products } from "./components/products/products"
+import { Brands } from "./components/brands/brands"
 
 function App() {
 
   return (
     <>
      <Header/>
-     <Banner/>
      <Departamento/>
-     <Category/>
+     <Products/>
+     <Brands/>
     </>
   )
 }

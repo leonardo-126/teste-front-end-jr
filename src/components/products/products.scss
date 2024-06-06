@@ -1,2 +1,55 @@
-@use '../../_variables.sass'
+@use '../../_variables.sass';
 
+.products {
+    width: 100%;
+    &-title {
+        width: 1150px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .products-title-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            color: variables.$text-color;
+        }
+    }
+    .products-title-border {
+        border: 1px solid #DEDEDE;
+        width: 360px;
+        background-color: red;
+    }
+    .products-title-sub {
+        all: unset;
+        cursor: pointer;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: #3F3F40;
+    }
+    .products-title-sub {
+        p {
+            font-size: 15px;
+            font-weight: 700;
+            color: #3F3F40;
+        }
+    }
+    &-cards {
+        width: 100%;
+        &-content {
+            width: 1280px;
+            margin: 0 auto;
+            margin-top:60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

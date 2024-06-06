@@ -9,6 +9,7 @@ import heart from '../../assets/header/heart.png'
 import user from '../../assets/header/UserCircle.png'
 import cart from '../../assets/header/ShoppingCart.png'
 import crown from '../../assets/header/CrownSimple.png'
+import { Banner } from '../baner/banner';
 
 export const Header = () => {
     return (
@@ -66,6 +67,7 @@ export const Header = () => {
                 </ul>
             </div>
         </div>
+        <Banner/>
         </>
     )
 }

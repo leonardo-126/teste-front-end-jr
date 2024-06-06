@@ -7,9 +7,10 @@ interface CardProps {
     text: string;
     background: string;
     borderRadius: string | number;
+    buttonText: string;
 }
 
-export const CardPro: React.FC<CardProps> = ({width, height, title, text, background, borderRadius}) => {
+export const CardPro: React.FC<CardProps> = ({width, height, title, text, background, borderRadius,buttonText}) => {
     const cardStyle: React.CSSProperties = {
         width, 
         height,
@@ -24,7 +25,7 @@ export const CardPro: React.FC<CardProps> = ({width, height, title, text, backgr
             <div className="card-content">
                 <h1>{title}</h1>
                 <p>{text}</p>
-                <button>Confira</button>
+                <button>{buttonText}</button>
             </div>
         </div>
     )
