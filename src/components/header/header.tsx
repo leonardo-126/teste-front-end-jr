@@ -1,14 +1,14 @@
 import './header.scss'
-import shieldCheck from '../../assets/ShieldCheck.png';
-import truck from '../../assets/Truck.png';
-import card from '../../assets/CreditCard.png';
+import shieldCheck from '../../assets/header/ShieldCheck.png';
+import truck from '../../assets/header/Truck.png';
+import card from '../../assets/header/CreditCard.png';
 import logo from '../../assets/logo.png'
-import search from '../../assets/search.png'
-import caixa from '../../assets/caixa.png'
-import heart from '../../assets/Heart.png'
-import user from '../../assets/UserCircle.png'
-import cart from '../../assets/ShoppingCart.png'
-import crown from '../../assets/CrownSimple.png'
+import search from '../../assets/header/search.png'
+import caixa from '../../assets/header/caixa.png'
+import heart from '../../assets/header/heart.png'
+import user from '../../assets/header/UserCircle.png'
+import cart from '../../assets/header/ShoppingCart.png'
+import crown from '../../assets/header/CrownSimple.png'
 
 export const Header = () => {
     return (
