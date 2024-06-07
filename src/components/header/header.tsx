@@ -28,17 +28,27 @@ export const Header = () => {
             </div>
             <div className="header-nav">
                 <div className='header-nav-logo'>
-                    <img src={logo} alt="Logo VTex"/>
+                    <a href=""><img src={logo} alt="Logo VTex"/></a>
                 </div>
                     <form action="">
                         <input type="text" placeholder='O que você está buscando?'/>
                         <img src={search} alt="Pesquisar"/>
                     </form>
                 <div className="header-nav-container">
-                    <img src={caixa} alt="Envios" />
-                    <img src={heart} alt="Curtidos" />
-                    <img src={user} alt="Perfil" />
-                    <img src={cart} alt="Carrinho" />
+                    <ul>
+                        <li>
+                            <img src={caixa} alt="Envios" />
+                        </li>
+                        <li>
+                            <img src={heart} alt="Curtidos" />
+                        </li>
+                        <li>
+                            <img src={user} alt="Perfil" />
+                        </li>
+                        <li>
+                            <img src={cart} alt="Carrinho" />
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div className="header-content">

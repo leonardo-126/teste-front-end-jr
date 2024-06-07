@@ -33,6 +33,9 @@
         
     }
     &-nav {
+        &-logo {
+            cursor: pointer;
+        }
         width: 1280px;
         display: flex;
         justify-content: space-between;
@@ -51,22 +54,39 @@
             input {
                 width: 100%;
                 font-size: 14px;
-                font-weight: 500;
-                color: #9F9F9F;
+                font-weight: 400;
+                color: #4e4e4e;
                 outline: none;
                 border: none;
                 background-color: transparent;
+                &::placeholder {
+                    color: #9F9F9F;
+                    font-weight: 500;
+                }
             }
             img {
                 cursor: pointer;
+                &:hover {
+                    transform: translateY(-2px);
+                    filter: brightness(0) saturate(100%) invert(19%) sepia(84%) saturate(5110%) hue-rotate(331deg) brightness(101%) contrast(94%);
+                }
             }
         }
         &-container {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            img {
-                cursor: pointer;
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                li {
+                    img {
+                        transition: 0.4s ease;
+                        cursor: pointer;
+                        &:hover {
+                            transform: translateY(-5px);
+                            filter: brightness(0) saturate(100%) invert(25%) sepia(5%) saturate(22%) hue-rotate(328deg) brightness(100%) contrast(79%);
+                        }
+                    }
+                }
             }
         }
     }
@@ -89,10 +109,16 @@
                     transition: 0.4s;
                 }
                 a:hover {
+                    transform: translateY(-3px);
+                    font-size: 13px;
                     color: #F71963;
+                    
                 }
                 img {
                     margin-right: 5px;
+                    &:hover {
+                        filter: brightness(0) saturate(100%) invert(19%) sepia(84%) saturate(5110%) hue-rotate(331deg) brightness(101%) contrast(94%);
+                    }
                 }
                 &.active a{
                     color: #F71963;

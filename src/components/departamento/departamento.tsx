@@ -22,7 +22,7 @@ const DepProps = (props: DepProps) => {
                 <img src={props.img} alt={props.description}/>
             </div>
             <div className={props.classContent}>
-                <h1>{props.title}</h1>
+                <h1 className='title-dep'>{props.title}</h1>
             </div>
         </div>
     )

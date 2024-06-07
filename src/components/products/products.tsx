@@ -3,6 +3,7 @@ import './products.scss'
 import parceiros from '../../assets/backIamgePro/Parceiros.png'
 import produtos from '../../assets/backIamgePro/Produtos.png'
 import { Category } from '../category/category.tsx'
+import { Vitrine } from '../VitrineCard/vitrine.tsx'
 
 interface ProductProps {
     title: string,
@@ -28,6 +29,7 @@ export const Products= () => {
         <div className="products">
             <ProductProps title='produtos relacionados' subTitle=''/>
             <Category/>
+            <Vitrine/>
             <div className="Products-cards">
                 <div className="products-cards-content">
                     <CardPro 

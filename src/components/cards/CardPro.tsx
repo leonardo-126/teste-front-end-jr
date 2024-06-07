@@ -23,8 +23,8 @@ export const CardPro: React.FC<CardProps> = ({width, height, title, text, backgr
     return (
         <div className='card' style={cardStyle}>
             <div className="card-content">
-                <h1>{title}</h1>
-                <p>{text}</p>
+                <h1 className='card-title'>{title}</h1>
+                <p className='card-sub'>{text}</p>
                 <button>{buttonText}</button>
             </div>
         </div>
